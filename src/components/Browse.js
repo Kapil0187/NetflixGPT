@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from './Header'
 import useNowPlayingMovies from '../Hooks/useNowPlayingMovies'
+import MainContainer from './MainContainer'
+import SecondryContainer from './SecondryContainer'
 
 const Browes = () => {
 
@@ -8,13 +10,16 @@ const Browes = () => {
   return (
     <div>
       <Header/>
+      <MainContainer/>
+      <SecondryContainer/>
+      
       {/* 
           MainContainer
             - videoBackgroud
             - vidotitle
           Secondrycontainer
-            - MovieList * n
-              - cards * n
+            - MovieList*n
+              - cards*n
       */}
     </div>
   )
