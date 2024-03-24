@@ -5,7 +5,9 @@ import useMovieTrailer from "../Hooks/useMovieTrailer";
 const VideoBackground = ({movieId}) => {
 
     useMovieTrailer(movieId);
-    const trailerVideo = useSelector((store)=>store.movies?.trailerVideo)
+    const trailerVideo = useSelector((store)=>store.bg?.trailerVideo)
+  if(trailerVideo===null)
+    return;
   return (
     <div className="w-full">
       <iframe 
@@ -18,7 +20,7 @@ const VideoBackground = ({movieId}) => {
         encrypted-media; 
         gyroscope; 
         picture-in-picture;
-        web-share" 
+        web-share"
          referrerpolicy="strict-origin-when-cross-origin" 
          ></iframe>
     </div>
