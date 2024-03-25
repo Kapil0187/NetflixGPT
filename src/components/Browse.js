@@ -3,15 +3,19 @@ import Header from './Header'
 import useNowPlayingMovies from '../Hooks/useNowPlayingMovies'
 import MainContainer from './MainContainer'
 import SecondryContainer from './SecondryContainer'
-import usePopularMovies from '../Hooks/usePopularMovies'
 import GptSearch from './GptSearchPage'
 import { useSelector } from 'react-redux'
+import useTopRatedMovies from '../Hooks/useTopRatedMovies'
+import usePopularMovies from '../Hooks/usePopularMovies'
+import useUpcomingMovies from '../Hooks/useUpcomingMovies'
 
 const Browes = () => {
 
   const showGptSearch = useSelector(store=>store.gpt.showGptSearch)
   useNowPlayingMovies();
+  useTopRatedMovies();
   usePopularMovies();
+  useUpcomingMovies();
   return (
     <div>
       <Header/>
@@ -22,15 +26,6 @@ const Browes = () => {
           <MainContainer/>
           <SecondryContainer/>
         </>)}
-      
-      {/* 
-          MainContainer
-            - videoBackgroud
-            - vidotitle
-          Secondrycontainer
-            - MovieList*n
-              - cards*n
-      */}
     </div>
   )
 }

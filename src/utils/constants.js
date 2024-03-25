@@ -8,11 +8,12 @@ export const API_OPTIONS = {
     method: 'GET',
     headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMWY4NmIxODBlZDZiYmRiMTZlYzM5NDM0YmVlNGE1NSIsInN1YiI6IjY1OTFhNDg5ZWJiOTlkNWU2ZDllOTg4NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ei1SuH3jMJOKG230UMPH1zUrwzR7BJJD-E62RLLcXkI'
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMWY4NmIxODBlZDZiYmRiMTZlYzM5NDM0YmVlNGE1NSIsInN1YiI6IjY1OTFhNDg5ZWJiOTlkNWU2ZDllOTg4NyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Ei1SuH3jMJOKG230UMPH1zUrwzR7BJJD-E62RLLcXkI'//process.env.REACT_APP_TNDB_KEY,
     },
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500"
+export const NOT_FOUND_CDN_URL = 'https://movix-eta.vercel.app/assets/no-poster-af8294eb.png'
 
 export const SUPPORTED_LANUAES = [
     {
@@ -28,3 +29,5 @@ export const SUPPORTED_LANUAES = [
         name:"Spanish"
     }
 ]
+
+export const OPENAI_KEY = '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'// process.env.REACT_APP_OPENAI_KEY

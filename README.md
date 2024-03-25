@@ -38,7 +38,15 @@
 - GPT Search Page
 - Gpt Search Bar
 - Multi- Language Feature in our app
- - Commit Muilt Language Support in Gpt Search Page
+ - Gpt Openai apikey
+ - gpt search api call
+ - fetched gpt movie suggestion from tmdb 
+ - created gptSlice added data
+ - Reused Movie list component to make movie suggestion container
+ - adding .env file
+ - adding .env file to gitignore
+ - memoization
+ - made our side responsive
 
 # Features
 - Login/Sing Up 
