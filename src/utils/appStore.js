@@ -13,7 +13,7 @@ const appStore = configureStore({
         movies:moviesReducer,
         gpt:gptSlice,
         config:configSlice,
-        details:movieDetailsSlice
+        details:movieDetailsSlice,
     },
 });
 

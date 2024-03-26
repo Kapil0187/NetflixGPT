@@ -1,12 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const movieDetailsSlice = createSlice({
-    name:"details",
+    name:'details',
     initialState:{
         movieDetails:null
     },
     reducers:{
-        addMovieDetails:(state,action)=>{
+        addMovieDetails : (state,action)=>{
             state.movieDetails = action.payload;
         }
     }

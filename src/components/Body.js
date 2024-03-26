@@ -5,8 +5,8 @@ import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import MainContainer from './MainContainer'
 import SecondryContainer from './SecondryContainer'
 import GptSearchPage from './GptSearchPage'
-import MovieDetailsPage from './MovieDetailsPage'
 import Footer from './Footer'
+import MovieDetails from './MovieDetails'
 
 const Body = () => {
     const appRouter = createBrowserRouter([
@@ -31,7 +31,7 @@ const Body = () => {
               },
               {
                 path:"/browse/movie",
-                element:<MovieDetailsPage/>
+                element:<MovieDetails/>
               }
             ]           
         },
