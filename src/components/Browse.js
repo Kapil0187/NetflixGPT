@@ -8,6 +8,8 @@ import { useSelector } from 'react-redux'
 import useTopRatedMovies from '../Hooks/useTopRatedMovies'
 import usePopularMovies from '../Hooks/usePopularMovies'
 import useUpcomingMovies from '../Hooks/useUpcomingMovies'
+import { Outlet } from 'react-router-dom'
+import Footer from './Footer'
 
 const Browes = () => {
 
@@ -19,13 +21,7 @@ const Browes = () => {
   return (
     <div>
       <Header/>
-      {showGptSearch ?
-        (<GptSearch/>):
-        (
-        <>
-          <MainContainer/>
-          <SecondryContainer/>
-        </>)}
+      <Outlet/>
     </div>
   )
 }

@@ -3,7 +3,6 @@ import { IMG_CDN_URL,NOT_FOUND_CDN_URL} from '../utils/constants'
 
 const MovieCard = (movie) => {
   
-  console.log(movie);
   const {poster_path,original_title,release_date} = movie.movie;
   
   return (

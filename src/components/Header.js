@@ -10,6 +10,7 @@ import { addUser, removeUser } from '../utils/userSlice'
 import { LOGO,SUPPORTED_LANUAES,USERLOGO} from '../utils/constants';
 import { toggleGptSearchView } from '../utils/gptSlice';
 import { changeLanguage } from '../utils/configSlice';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -61,6 +62,10 @@ const Header = () => {
       />
       {user && 
       <div className='flex md:justify-center justify-between p-2'>
+        <ul className='text-white flex items-center'>
+          <Link to="/browse"><li className='p-4'>Home</li></Link>
+          <Link to="/browse/gptSearch" className='p-4'><li>GPT Search</li></Link>
+        </ul>
         {showGptSearch && <select className='p-2 m-2 bg-gray-700 text-white' onChange={handlerLanguageChange}>
           {SUPPORTED_LANUAES.map((lang)=>(
             <option key={lang.identifier} value={lang.identifier}>

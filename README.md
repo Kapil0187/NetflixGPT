@@ -47,6 +47,10 @@
  - adding .env file to gitignore
  - memoization
  - made our side responsive
+ - add upcomingmovies section
+ - add posternot found image
+ - created movie Details section
+ - created footer
 
 # Features
 - Login/Sing Up 

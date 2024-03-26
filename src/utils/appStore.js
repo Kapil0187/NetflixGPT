@@ -4,6 +4,7 @@ import moviesReducer from "./moviesSlice";
 import backGroudVideoSlice from "./backGroudVideoSlice";
 import gptSlice from "./gptSlice";
 import configSlice from "./configSlice";
+import movieDetailsSlice from "./movieDetailsSlice";
 
 const appStore = configureStore({
     reducer:{
@@ -12,6 +13,7 @@ const appStore = configureStore({
         movies:moviesReducer,
         gpt:gptSlice,
         config:configSlice,
+        details:movieDetailsSlice
     },
 });
 
