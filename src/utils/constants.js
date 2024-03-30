@@ -30,4 +30,4 @@ export const SUPPORTED_LANUAES = [
     }
 ]
 
-export const OPENAI_KEY = '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'// process.env.REACT_APP_OPENAI_KEY
+//export const OPENAI_KEY = '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'// process.env.REACT_APP_OPENAI_KEY
