@@ -53,11 +53,11 @@ const Header = () => {
         alt='logo'
       /></Link>
       {user && 
-      <div className='flex md:justify-center justify-between p-2'>
+      <div className='flex font-bold md:justify-center justify-between p-2'>
         <ul className='text-white flex items-center'>
           <Link to="/browse" className='p-4'><li>Home</li></Link>
           <Link to="/browse/gptSearch" className='p-4'><li>GPT Search</li></Link>
-          <Link to="" className='p-4'>Movies</Link>
+          <Link to="/browse/Movies" className='p-4'>Movies</Link>
         </ul>
         <img className="hidden md:inline-block m-2 w-12 rounded-lg" src={USERLOGO} alt='userlogo'></img>
         <button onClick={handleSingOut} className='font-bold text-white p-2'>(Sign out)</button>

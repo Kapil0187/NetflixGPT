@@ -5,6 +5,8 @@ import backGroudVideoSlice from "./backGroudVideoSlice";
 import gptSlice from "./gptSlice";
 import configSlice from "./configSlice";
 import movieDetailsSlice from "./movieDetailsSlice";
+import showTrailerSlice from "./showTrailerSlice";
+
 
 const appStore = configureStore({
     reducer:{
@@ -14,6 +16,7 @@ const appStore = configureStore({
         gpt:gptSlice,
         config:configSlice,
         details:movieDetailsSlice,
+        show:showTrailerSlice,
     },
 });
 

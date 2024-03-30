@@ -51,6 +51,8 @@
  - add posternot found image
  - created movie Details section
  - created footer
+ - created movies Explore section
+ - movies setion created infinit scroll
 
 # Features
 - Login/Sing Up 

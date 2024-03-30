@@ -7,6 +7,7 @@ import SecondryContainer from './SecondryContainer'
 import GptSearchPage from './GptSearchPage'
 import Footer from './Footer'
 import MovieDetails from './MovieDetails'
+import ExploreMovies from './ExploreMovies'
 
 const Body = () => {
     const appRouter = createBrowserRouter([
@@ -30,8 +31,12 @@ const Body = () => {
                 element:<GptSearchPage/>
               },
               {
-                path:"/browse/movie",
+                path:"/browse/moviedetails",
                 element:<MovieDetails/>
+              },
+              {
+                path:"/browse/Movies",
+                element:<ExploreMovies/>
               }
             ]           
         },

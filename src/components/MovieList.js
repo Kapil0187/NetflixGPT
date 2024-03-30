@@ -11,7 +11,7 @@ const MovieList = ({title,movies}) => {
         <div className='flex'>
             {
               movies && movies.map((movie)=>
-              <Link key={movie.id} to={"/browse/movie?id="+movie.id}>
+              <Link key={movie.id} to={"/browse/moviedetails?id="+movie.id}>
                 <MovieCard movie={movie}/>
               </Link>
               )
